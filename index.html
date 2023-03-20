@@ -41,7 +41,10 @@
       >
         <!-- Rating state start -->
 
-        <section id="rating-section" class="flex flex-col justify-between h-full p-6 sm:p-8">
+        <section
+          id="rating-section"
+          class="flex flex-col justify-between h-full p-6 sm:p-8 transition-opacity duration-1000"
+        >
           <div class="flex flex-col gap-3">
             <div
               class="bg-lighter-dark-blue h-12 aspect-square rounded-full self-start bg-star-icon bg-no-repeat bg-center bg-star-icon-size sm:h-14 sm:mb-4"
@@ -63,7 +66,13 @@
                   class="h-full w-full flex justify-center items-center font-bold"
                   >1</label
                 >
-                <input type="radio" name="rating" id="rating-1" value="1" class="hidden" />
+                <input
+                  type="radio"
+                  name="rating"
+                  id="rating-1"
+                  value="1"
+                  class="hidden"
+                />
               </li>
               <li
                 class="bg-lighter-dark-blue h-12 aspect-square rounded-full hover:bg-orange hover:text-white sm:h-14"
@@ -73,7 +82,13 @@
                   class="h-full w-full flex justify-center items-center font-bold"
                   >2</label
                 >
-                <input type="radio" name="rating" id="rating-2" value="2" class="hidden" />
+                <input
+                  type="radio"
+                  name="rating"
+                  id="rating-2"
+                  value="2"
+                  class="hidden"
+                />
               </li>
               <li
                 class="bg-lighter-dark-blue h-12 aspect-square rounded-full hover:bg-orange hover:text-white sm:h-14"
@@ -83,7 +98,13 @@
                   class="h-full w-full flex justify-center items-center font-bold"
                   >3</label
                 >
-                <input type="radio" name="rating" id="rating-3" value="3" class="hidden" />
+                <input
+                  type="radio"
+                  name="rating"
+                  id="rating-3"
+                  value="3"
+                  class="hidden"
+                />
               </li>
               <li
                 class="bg-lighter-dark-blue h-12 aspect-square rounded-full hover:bg-orange hover:text-white sm:h-14"
@@ -93,7 +114,13 @@
                   class="h-full w-full flex justify-center items-center font-bold"
                   >4</label
                 >
-                <input type="radio" name="rating" id="rating-4" value="4" class="hidden" />
+                <input
+                  type="radio"
+                  name="rating"
+                  id="rating-4"
+                  value="4"
+                  class="hidden"
+                />
               </li>
               <li
                 class="bg-lighter-dark-blue h-12 aspect-square rounded-full hover:bg-orange hover:text-white sm:h-14"
@@ -103,7 +130,13 @@
                   class="h-full w-full flex justify-center items-center font-bold"
                   >5</label
                 >
-                <input type="radio" name="rating" id="rating-5" value="5" class="hidden" />
+                <input
+                  type="radio"
+                  name="rating"
+                  id="rating-5"
+                  value="5"
+                  class="hidden"
+                />
               </li>
             </ul>
 
@@ -119,7 +152,7 @@
         <!-- Thank you state start -->
         <section
           id="thank-you-section"
-          class="hidden flex-col items-center px-4 py-8 h-full justify-between sm:py-12 sm:px-9"
+          class="hidden flex-col items-center px-4 py-8 h-full justify-between sm:py-12 sm:px-9 transition duration-1000 opacity-0"
         >
           <img src="images/illustration-thank-you.svg" alt="Image of a phone" />
           <p class="text-orange bg-lighter-dark-blue rounded-full py-2 px-4">
