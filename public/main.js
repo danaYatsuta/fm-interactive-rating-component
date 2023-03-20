@@ -5,9 +5,16 @@ const submitButton = document.querySelector("#submit-button");
 const selectedRatingSpan = document.querySelector("#selected-rating");
 
 let lastPressedRatingButton = null;
+let pressingRatingButtonFirstTime = true;
 
 ratingButtons.forEach((ratingButton) => {
   ratingButton.addEventListener("click", (event) => {
+    if (pressingRatingButtonFirstTime) {
+      pressingRatingButtonFirstTime = false;
+
+      submitButton.classList.add("hover:text-orange", "hover:bg-white");
+    }
+
     if (
       lastPressedRatingButton !== null &&
       lastPressedRatingButton !== ratingButton
