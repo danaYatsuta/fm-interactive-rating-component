@@ -18,6 +18,9 @@ module.exports = {
       backgroundImage: {
         'star-icon': 'url("images/icon-star.svg")'
       },
+      height: {
+        'card-mobile': '360px'
+      }
     },
   },
   plugins: [],
