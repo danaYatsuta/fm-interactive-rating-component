@@ -36,19 +36,22 @@
   >
     <main class="flex flex-1 items-center justify-center">
       <div
-        class="m-4 h-card-mobile w-full rounded-2xl bg-gradient-to-b from-dark-blue to-very-dark-blue sm:h-card-desktop sm:w-card-desktop"
+        id="card"
+        class="rating-state group m-4 h-card-mobile w-full rounded-2xl bg-gradient-to-b from-dark-blue to-very-dark-blue sm:h-card-desktop sm:w-card-desktop"
       >
         <!-- Rating state start -->
 
         <section
           id="rating-section"
-          class="flex h-full flex-col justify-between p-6 transition-opacity duration-1000 sm:p-8"
+          class="hidden h-full flex-col justify-between p-6 transition-opacity duration-1000 group-[.rating-state]:flex sm:p-8"
         >
           <div class="flex flex-col gap-3">
             <div
               class="aspect-square h-12 self-start rounded-full bg-lighter-dark-blue bg-star-icon bg-star-icon-size bg-center bg-no-repeat sm:mb-4 sm:h-14"
             ></div>
-            <h1 class="text-2xl font-bold text-white sm:text-3xl">How did we do?</h1>
+            <h1 class="text-2xl font-bold text-white sm:text-3xl">
+              How did we do?
+            </h1>
             <p>
               Please let us know how we did with your support request. All
               feedback is appreciated to help us improve our offering!
@@ -57,85 +60,80 @@
 
           <form action="#" method="post">
             <ul class="flex justify-between">
-              <li
-                class="aspect-square h-12 rounded-full bg-lighter-dark-blue hover:bg-orange hover:text-white sm:h-14"
-              >
-                <label
-                  for="rating-1"
-                  class="flex h-full w-full items-center justify-center font-bold"
-                  >1</label
-                >
+              <li>
                 <input
                   type="radio"
                   name="rating"
                   id="rating-1"
                   value="1"
-                  class="hidden"
+                  class="peer hidden"
                 />
-              </li>
-              <li
-                class="aspect-square h-12 rounded-full bg-lighter-dark-blue hover:bg-orange hover:text-white sm:h-14"
-              >
+
                 <label
-                  for="rating-2"
-                  class="flex h-full w-full items-center justify-center font-bold"
-                  >2</label
+                  for="rating-1"
+                  class="flex aspect-square h-12 items-center justify-center rounded-full bg-lighter-dark-blue font-bold hover:bg-orange hover:text-white peer-checked:bg-medium-grey peer-checked:text-white sm:h-14"
+                  >1</label
                 >
+              </li>
+              <li>
                 <input
                   type="radio"
                   name="rating"
                   id="rating-2"
                   value="2"
-                  class="hidden"
+                  class="peer hidden"
                 />
-              </li>
-              <li
-                class="aspect-square h-12 rounded-full bg-lighter-dark-blue hover:bg-orange hover:text-white sm:h-14"
-              >
+
                 <label
-                  for="rating-3"
-                  class="flex h-full w-full items-center justify-center font-bold"
-                  >3</label
+                  for="rating-2"
+                  class="flex aspect-square h-12 items-center justify-center rounded-full bg-lighter-dark-blue font-bold hover:bg-orange hover:text-white peer-checked:bg-medium-grey peer-checked:text-white sm:h-14"
+                  >2</label
                 >
+              </li>
+              <li>
                 <input
                   type="radio"
                   name="rating"
                   id="rating-3"
                   value="3"
-                  class="hidden"
+                  class="peer hidden"
                 />
-              </li>
-              <li
-                class="aspect-square h-12 rounded-full bg-lighter-dark-blue hover:bg-orange hover:text-white sm:h-14"
-              >
+
                 <label
-                  for="rating-4"
-                  class="flex h-full w-full items-center justify-center font-bold"
-                  >4</label
+                  for="rating-3"
+                  class="flex aspect-square h-12 items-center justify-center rounded-full bg-lighter-dark-blue font-bold hover:bg-orange hover:text-white peer-checked:bg-medium-grey peer-checked:text-white sm:h-14"
+                  >3</label
                 >
+              </li>
+              <li>
                 <input
                   type="radio"
                   name="rating"
                   id="rating-4"
                   value="4"
-                  class="hidden"
+                  class="peer hidden"
                 />
-              </li>
-              <li
-                class="aspect-square h-12 rounded-full bg-lighter-dark-blue hover:bg-orange hover:text-white sm:h-14"
-              >
+
                 <label
-                  for="rating-5"
-                  class="flex h-full w-full items-center justify-center font-bold"
-                  >5</label
+                  for="rating-4"
+                  class="flex aspect-square h-12 items-center justify-center rounded-full bg-lighter-dark-blue font-bold hover:bg-orange hover:text-white peer-checked:bg-medium-grey peer-checked:text-white sm:h-14"
+                  >4</label
                 >
+              </li>
+              <li>
                 <input
                   type="radio"
                   name="rating"
                   id="rating-5"
                   value="5"
-                  class="hidden"
+                  class="peer hidden"
                 />
+
+                <label
+                  for="rating-5"
+                  class="flex aspect-square h-12 items-center justify-center rounded-full bg-lighter-dark-blue font-bold hover:bg-orange hover:text-white peer-checked:bg-medium-grey peer-checked:text-white sm:h-14"
+                  >5</label
+                >
               </li>
             </ul>
 
@@ -143,7 +141,7 @@
               type="submit"
               value="Submit"
               id="submit-button"
-              class="mt-6 w-full rounded-full bg-orange py-3 font-bold uppercase tracking-widest text-white sm:mt-8"
+              class="pointer-events-none mt-6 w-full rounded-full bg-orange py-3 font-bold uppercase tracking-widest text-white hover:bg-white hover:text-orange sm:mt-8"
             />
           </form>
         </section>
@@ -151,7 +149,7 @@
         <!-- Thank you state start -->
         <section
           id="thank-you-section"
-          class="hidden h-full flex-col items-center justify-between px-4 py-8 opacity-0 transition-opacity duration-1000 sm:py-12 sm:px-9"
+          class="hidden h-full flex-col items-center justify-between px-4 py-8 opacity-0 transition-opacity duration-1000 group-[.thank-you-state]:flex sm:py-12 sm:px-9"
         >
           <img src="images/illustration-thank-you.svg" alt="Image of a phone" />
           <p class="rounded-full bg-lighter-dark-blue py-2 px-4 text-orange">
@@ -159,7 +157,9 @@
           </p>
 
           <div>
-            <h1 class="mb-2 text-center text-2xl font-bold text-white sm:text-3xl">
+            <h1
+              class="mb-2 text-center text-2xl font-bold text-white sm:text-3xl"
+            >
               Thank you!
             </h1>
             <p class="text-center">

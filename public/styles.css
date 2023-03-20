@@ -513,6 +513,10 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.pointer-events-none {
+  pointer-events: none;
+}
+
 .m-4 {
   margin: 1rem;
 }
@@ -596,11 +600,6 @@ video {
 .bg-lighter-dark-blue {
   --tw-bg-opacity: 1;
   background-color: hsl(213 19% 20% / var(--tw-bg-opacity));
-}
-
-.bg-medium-grey {
-  --tw-bg-opacity: 1;
-  background-color: hsl(216 12% 54% / var(--tw-bg-opacity));
 }
 
 .bg-orange {
@@ -741,6 +740,24 @@ html {
 }
 
 .hover\:text-white:hover {
+  --tw-text-opacity: 1;
+  color: hsl(0 0% 100% / var(--tw-text-opacity));
+}
+
+.group.rating-state .group-\[\.rating-state\]\:flex {
+  display: flex;
+}
+
+.group.thank-you-state .group-\[\.thank-you-state\]\:flex {
+  display: flex;
+}
+
+.peer:checked ~ .peer-checked\:bg-medium-grey {
+  --tw-bg-opacity: 1;
+  background-color: hsl(216 12% 54% / var(--tw-bg-opacity));
+}
+
+.peer:checked ~ .peer-checked\:text-white {
   --tw-text-opacity: 1;
   color: hsl(0 0% 100% / var(--tw-text-opacity));
 }
