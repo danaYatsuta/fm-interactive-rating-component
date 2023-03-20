@@ -8,12 +8,17 @@ module.exports = {
       'light-grey': 'hsl(217, 12%, 63%)',
       'medium-grey': 'hsl(216, 12%, 54%)',
       'dark-blue': 'hsl(213, 19%, 18%)',
-      'very-dark-blue': 'hsl(216, 12%, 8%)'
+      'very-dark-blue': 'hsl(216, 12%, 8%)',
+      'lighter-dark-blue': 'hsl(213, 19%, 20%)'
     },
     fontFamily: {
       'overpass': ['Overpass', 'sans-serif']
     },
-    extend: {},
+    extend: {
+      backgroundImage: {
+        'star-icon': 'url("images/icon-star.svg")'
+      },
+    },
   },
   plugins: [],
 }

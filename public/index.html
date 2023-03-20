@@ -32,48 +32,90 @@
       }
     </style>
   </head>
-  <body>
-    <main>
-      <div>
+  <body
+    class="min-h-screen text-light-grey font-overpass flex flex-col bg-very-dark-blue justify-between"
+  >
+    <main class="flex flex-1 items-center">
+      <div
+        class="bg-gradient-to-b from-dark-blue to-very-dark-blue m-4 rounded-2xl"
+      >
         <!-- Rating state start -->
-        <section>
-          <h1>How did we do?</h1>
-
-          <p>
-            Please let us know how we did with your support request. All
-            feedback is appreciated to help us improve our offering!
-          </p>
+        <section class="flex flex-col gap-6 p-6">
+          <div
+            class="bg-lighter-dark-blue h-11 aspect-square rounded-full self-start bg-star-icon bg-no-repeat bg-center"
+          ></div>
+          <div>
+            <h1 class="text-white font-bold text-2xl mb-2">How did we do?</h1>
+            <p>
+              Please let us know how we did with your support request. All
+              feedback is appreciated to help us improve our offering!
+            </p>
+          </div>
 
           <form action="#" method="post">
-            <ul>
-              <li>
-                <label for="score-1">1</label>
-                <input type="radio" name="score" id="score-1" />
+            <ul class="flex justify-between">
+              <li
+                class="bg-lighter-dark-blue h-11 aspect-square rounded-full hover:bg-orange hover:text-white"
+              >
+                <label
+                  for="score-1"
+                  class="h-full w-full flex justify-center items-center font-bold"
+                  >1</label
+                >
+                <input type="radio" name="score" id="score-1" class="hidden" />
               </li>
-              <li>
-                <label for="score-2">2</label>
-                <input type="radio" name="score" id="score-2" />
+              <li
+                class="bg-lighter-dark-blue h-11 aspect-square rounded-full hover:bg-orange hover:text-white"
+              >
+                <label
+                  for="score-2"
+                  class="h-full w-full flex justify-center items-center font-bold"
+                  >2</label
+                >
+                <input type="radio" name="score" id="score-2" class="hidden" />
               </li>
-              <li>
-                <label for="score-3">3</label>
-                <input type="radio" name="score" id="score-3" />
+              <li
+                class="bg-lighter-dark-blue h-11 aspect-square rounded-full hover:bg-orange hover:text-white"
+              >
+                <label
+                  for="score-3"
+                  class="h-full w-full flex justify-center items-center font-bold"
+                  >3</label
+                >
+                <input type="radio" name="score" id="score-3" class="hidden" />
               </li>
-              <li>
-                <label for="score-4">4</label>
-                <input type="radio" name="score" id="score-4" />
+              <li
+                class="bg-lighter-dark-blue h-11 aspect-square rounded-full hover:bg-orange hover:text-white"
+              >
+                <label
+                  for="score-4"
+                  class="h-full w-full flex justify-center items-center font-bold"
+                  >4</label
+                >
+                <input type="radio" name="score" id="score-4" class="hidden" />
               </li>
-              <li>
-                <label for="score-5">5</label>
-                <input type="radio" name="score" id="score-5" />
+              <li
+                class="bg-lighter-dark-blue h-11 aspect-square rounded-full hover:bg-orange hover:text-white"
+              >
+                <label
+                  for="score-5"
+                  class="h-full w-full flex justify-center items-center font-bold"
+                  >5</label
+                >
+                <input type="radio" name="score" id="score-5" class="hidden" />
               </li>
             </ul>
 
-            <input type="submit" value="Submit" />
+            <input
+              type="submit"
+              value="Submit"
+              class="bg-orange text-white uppercase font-bold tracking-widest w-full rounded-full py-3 mt-6 hover:text-orange hover:bg-white"
+            />
           </form>
         </section>
         <!-- Rating state end -->
         <!-- Thank you state start -->
-        <section>
+        <section class="hidden">
           <p>You selected 4 out of 5</p>
 
           <h1>Thank you!</h1>
