@@ -577,14 +577,6 @@ video {
   justify-content: space-between;
 }
 
-.gap-2 {
-  gap: 0.5rem;
-}
-
-.gap-6 {
-  gap: 1.5rem;
-}
-
 .gap-4 {
   gap: 1rem;
 }
@@ -636,6 +628,14 @@ video {
 
 .to-very-dark-blue {
   --tw-gradient-to: hsl(216, 12%, 8%);
+}
+
+.bg-\[length\:40\%\] {
+  background-size: 40%;
+}
+
+.bg-star-icon-size {
+  background-size: 40%;
 }
 
 .bg-center {
@@ -732,4 +732,34 @@ html {
 .hover\:text-white:hover {
   --tw-text-opacity: 1;
   color: hsl(0 0% 100% / var(--tw-text-opacity));
+}
+
+@media (min-width: 410px) {
+  .sm\:mt-8 {
+    margin-top: 2rem;
+  }
+
+  .sm\:mb-4 {
+    margin-bottom: 1rem;
+  }
+
+  .sm\:h-14 {
+    height: 3.5rem;
+  }
+
+  .sm\:h-card-desktop {
+    height: 410px;
+  }
+
+  .sm\:h-12 {
+    height: 3rem;
+  }
+
+  .sm\:w-card-desktop {
+    width: 410px;
+  }
+
+  .sm\:p-8 {
+    padding: 2rem;
+  }
 }
