@@ -2,7 +2,7 @@ const ratingSection = document.querySelector("#rating-section");
 const thankYouSection = document.querySelector("#thank-you-section");
 const ratingButtons = document.querySelectorAll("input[name='rating']");
 const submitButton = document.querySelector("#submit-button");
-const selectedRatingSpan = document.querySelector("#selected-rating")
+const selectedRatingSpan = document.querySelector("#selected-rating");
 
 let lastPressedRatingButton = null;
 
@@ -38,10 +38,19 @@ submitButton.addEventListener("click", (event) => {
   if (checkedRatingButton !== null) {
     selectedRatingSpan.textContent = checkedRatingButton.value;
 
-    ratingSection.classList.add("hidden");
-    ratingSection.classList.remove("flex");
+    ratingSection.classList.add("opacity-0");
 
-    thankYouSection.classList.add("flex");
-    thankYouSection.classList.remove("hidden");
+    setTimeout(() => {
+      ratingSection.classList.add("hidden");
+      ratingSection.classList.remove("flex");
+
+      thankYouSection.classList.add("flex");
+      thankYouSection.classList.remove("hidden");
+
+      // this is not ideal but I havent managed to find another way to animate from "display: none"
+      // explanation: https://stackoverflow.com/a/64001548
+      document.body.offsetHeight;
+      thankYouSection.classList.remove("opacity-0");
+    }, 1000);
   }
 });

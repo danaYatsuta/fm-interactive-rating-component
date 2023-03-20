@@ -577,10 +577,6 @@ video {
   justify-content: space-between;
 }
 
-.gap-4 {
-  gap: 1rem;
-}
-
 .gap-3 {
   gap: 0.75rem;
 }
@@ -602,6 +598,11 @@ video {
   background-color: hsl(213 19% 20% / var(--tw-bg-opacity));
 }
 
+.bg-medium-grey {
+  --tw-bg-opacity: 1;
+  background-color: hsl(216 12% 54% / var(--tw-bg-opacity));
+}
+
 .bg-orange {
   --tw-bg-opacity: 1;
   background-color: hsl(25 97% 53% / var(--tw-bg-opacity));
@@ -610,11 +611,6 @@ video {
 .bg-very-dark-blue {
   --tw-bg-opacity: 1;
   background-color: hsl(216 12% 8% / var(--tw-bg-opacity));
-}
-
-.bg-medium-grey {
-  --tw-bg-opacity: 1;
-  background-color: hsl(216 12% 54% / var(--tw-bg-opacity));
 }
 
 .bg-gradient-to-b {
@@ -633,10 +629,6 @@ video {
 
 .to-very-dark-blue {
   --tw-gradient-to: hsl(216, 12%, 8%);
-}
-
-.bg-\[length\:40\%\] {
-  background-size: 40%;
 }
 
 .bg-star-icon-size {
@@ -715,6 +707,28 @@ video {
   color: hsl(0 0% 100% / var(--tw-text-opacity));
 }
 
+.opacity-0 {
+  opacity: 0;
+}
+
+.transition {
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, -webkit-backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter;
+  transition-property: color, background-color, border-color, text-decoration-color, fill, stroke, opacity, box-shadow, transform, filter, backdrop-filter, -webkit-backdrop-filter;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.transition-opacity {
+  transition-property: opacity;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  transition-duration: 150ms;
+}
+
+.duration-1000 {
+  transition-duration: 1000ms;
+}
+
 html {
   font-size: 15px;
 }
@@ -740,12 +754,12 @@ html {
 }
 
 @media (min-width: 410px) {
-  .sm\:mt-8 {
-    margin-top: 2rem;
-  }
-
   .sm\:mb-4 {
     margin-bottom: 1rem;
+  }
+
+  .sm\:mt-8 {
+    margin-top: 2rem;
   }
 
   .sm\:h-14 {
@@ -756,10 +770,6 @@ html {
     height: 410px;
   }
 
-  .sm\:h-12 {
-    height: 3rem;
-  }
-
   .sm\:w-card-desktop {
     width: 410px;
   }
@@ -768,28 +778,13 @@ html {
     padding: 2rem;
   }
 
-  .sm\:py-12 {
-    padding-top: 3rem;
-    padding-bottom: 3rem;
-  }
-
-  .sm\:px-6 {
-    padding-left: 1.5rem;
-    padding-right: 1.5rem;
-  }
-
-  .sm\:px-8 {
-    padding-left: 2rem;
-    padding-right: 2rem;
-  }
-
-  .sm\:px-10 {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
-
   .sm\:px-9 {
     padding-left: 2.25rem;
     padding-right: 2.25rem;
+  }
+
+  .sm\:py-12 {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
   }
 }
