@@ -32,23 +32,23 @@
     </style>
   </head>
   <body
-    class="min-h-screen text-light-grey font-overpass flex flex-col bg-very-dark-blue justify-between"
+    class="flex min-h-screen flex-col justify-between bg-very-dark-blue font-overpass text-light-grey"
   >
     <main class="flex flex-1 items-center justify-center">
       <div
-        class="bg-gradient-to-b from-dark-blue to-very-dark-blue m-4 w-full rounded-2xl h-card-mobile sm:w-card-desktop sm:h-card-desktop"
+        class="m-4 h-card-mobile w-full rounded-2xl bg-gradient-to-b from-dark-blue to-very-dark-blue sm:h-card-desktop sm:w-card-desktop"
       >
         <!-- Rating state start -->
 
         <section
           id="rating-section"
-          class="flex flex-col justify-between h-full p-6 sm:p-8 transition-opacity duration-1000"
+          class="flex h-full flex-col justify-between p-6 transition-opacity duration-1000 sm:p-8"
         >
           <div class="flex flex-col gap-3">
             <div
-              class="bg-lighter-dark-blue h-12 aspect-square rounded-full self-start bg-star-icon bg-no-repeat bg-center bg-star-icon-size sm:h-14 sm:mb-4"
+              class="aspect-square h-12 self-start rounded-full bg-lighter-dark-blue bg-star-icon bg-star-icon-size bg-center bg-no-repeat sm:mb-4 sm:h-14"
             ></div>
-            <h1 class="text-white font-bold text-2xl">How did we do?</h1>
+            <h1 class="text-2xl font-bold text-white">How did we do?</h1>
             <p>
               Please let us know how we did with your support request. All
               feedback is appreciated to help us improve our offering!
@@ -58,11 +58,11 @@
           <form action="#" method="post">
             <ul class="flex justify-between">
               <li
-                class="bg-lighter-dark-blue h-12 aspect-square rounded-full hover:bg-orange hover:text-white sm:h-14"
+                class="aspect-square h-12 rounded-full bg-lighter-dark-blue hover:bg-orange hover:text-white sm:h-14"
               >
                 <label
                   for="rating-1"
-                  class="h-full w-full flex justify-center items-center font-bold"
+                  class="flex h-full w-full items-center justify-center font-bold"
                   >1</label
                 >
                 <input
@@ -74,11 +74,11 @@
                 />
               </li>
               <li
-                class="bg-lighter-dark-blue h-12 aspect-square rounded-full hover:bg-orange hover:text-white sm:h-14"
+                class="aspect-square h-12 rounded-full bg-lighter-dark-blue hover:bg-orange hover:text-white sm:h-14"
               >
                 <label
                   for="rating-2"
-                  class="h-full w-full flex justify-center items-center font-bold"
+                  class="flex h-full w-full items-center justify-center font-bold"
                   >2</label
                 >
                 <input
@@ -90,11 +90,11 @@
                 />
               </li>
               <li
-                class="bg-lighter-dark-blue h-12 aspect-square rounded-full hover:bg-orange hover:text-white sm:h-14"
+                class="aspect-square h-12 rounded-full bg-lighter-dark-blue hover:bg-orange hover:text-white sm:h-14"
               >
                 <label
                   for="rating-3"
-                  class="h-full w-full flex justify-center items-center font-bold"
+                  class="flex h-full w-full items-center justify-center font-bold"
                   >3</label
                 >
                 <input
@@ -106,11 +106,11 @@
                 />
               </li>
               <li
-                class="bg-lighter-dark-blue h-12 aspect-square rounded-full hover:bg-orange hover:text-white sm:h-14"
+                class="aspect-square h-12 rounded-full bg-lighter-dark-blue hover:bg-orange hover:text-white sm:h-14"
               >
                 <label
                   for="rating-4"
-                  class="h-full w-full flex justify-center items-center font-bold"
+                  class="flex h-full w-full items-center justify-center font-bold"
                   >4</label
                 >
                 <input
@@ -122,11 +122,11 @@
                 />
               </li>
               <li
-                class="bg-lighter-dark-blue h-12 aspect-square rounded-full hover:bg-orange hover:text-white sm:h-14"
+                class="aspect-square h-12 rounded-full bg-lighter-dark-blue hover:bg-orange hover:text-white sm:h-14"
               >
                 <label
                   for="rating-5"
-                  class="h-full w-full flex justify-center items-center font-bold"
+                  class="flex h-full w-full items-center justify-center font-bold"
                   >5</label
                 >
                 <input
@@ -143,7 +143,7 @@
               type="submit"
               value="Submit"
               id="submit-button"
-              class="bg-orange text-white uppercase font-bold tracking-widest w-full rounded-full py-3 mt-6 sm:mt-8"
+              class="mt-6 w-full rounded-full bg-orange py-3 font-bold uppercase tracking-widest text-white sm:mt-8"
             />
           </form>
         </section>
@@ -151,15 +151,15 @@
         <!-- Thank you state start -->
         <section
           id="thank-you-section"
-          class="hidden flex-col items-center px-4 py-8 h-full justify-between sm:py-12 sm:px-9 transition duration-1000 opacity-0"
+          class="hidden h-full flex-col items-center justify-between px-4 py-8 opacity-0 transition duration-1000 sm:py-12 sm:px-9"
         >
           <img src="images/illustration-thank-you.svg" alt="Image of a phone" />
-          <p class="text-orange bg-lighter-dark-blue rounded-full py-2 px-4">
+          <p class="rounded-full bg-lighter-dark-blue py-2 px-4 text-orange">
             You selected <span id="selected-rating">4</span> out of 5
           </p>
 
           <div>
-            <h1 class="text-white text-2xl font-bold text-center mb-2">
+            <h1 class="mb-2 text-center text-2xl font-bold text-white">
               Thank you!
             </h1>
             <p class="text-center">
