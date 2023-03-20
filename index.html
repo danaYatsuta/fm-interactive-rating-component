@@ -41,8 +41,7 @@
       >
         <!-- Rating state start -->
 
-        <!-- IMPORTANT: change hidden to flex after implementing JS -->
-        <section class="hidden flex-col justify-between h-full p-6 sm:p-8">
+        <section id="rating-section" class="flex flex-col justify-between h-full p-6 sm:p-8">
           <div class="flex flex-col gap-3">
             <div
               class="bg-lighter-dark-blue h-12 aspect-square rounded-full self-start bg-star-icon bg-no-repeat bg-center bg-star-icon-size sm:h-14 sm:mb-4"
@@ -60,57 +59,58 @@
                 class="bg-lighter-dark-blue h-12 aspect-square rounded-full hover:bg-orange hover:text-white sm:h-14"
               >
                 <label
-                  for="score-1"
+                  for="rating-1"
                   class="h-full w-full flex justify-center items-center font-bold"
                   >1</label
                 >
-                <input type="radio" name="score" id="score-1" class="hidden" />
+                <input type="radio" name="rating" id="rating-1" value="1" class="hidden" />
               </li>
               <li
                 class="bg-lighter-dark-blue h-12 aspect-square rounded-full hover:bg-orange hover:text-white sm:h-14"
               >
                 <label
-                  for="score-2"
+                  for="rating-2"
                   class="h-full w-full flex justify-center items-center font-bold"
                   >2</label
                 >
-                <input type="radio" name="score" id="score-2" class="hidden" />
+                <input type="radio" name="rating" id="rating-2" value="2" class="hidden" />
               </li>
               <li
                 class="bg-lighter-dark-blue h-12 aspect-square rounded-full hover:bg-orange hover:text-white sm:h-14"
               >
                 <label
-                  for="score-3"
+                  for="rating-3"
                   class="h-full w-full flex justify-center items-center font-bold"
                   >3</label
                 >
-                <input type="radio" name="score" id="score-3" class="hidden" />
+                <input type="radio" name="rating" id="rating-3" value="3" class="hidden" />
               </li>
               <li
                 class="bg-lighter-dark-blue h-12 aspect-square rounded-full hover:bg-orange hover:text-white sm:h-14"
               >
                 <label
-                  for="score-4"
+                  for="rating-4"
                   class="h-full w-full flex justify-center items-center font-bold"
                   >4</label
                 >
-                <input type="radio" name="score" id="score-4" class="hidden" />
+                <input type="radio" name="rating" id="rating-4" value="4" class="hidden" />
               </li>
               <li
                 class="bg-lighter-dark-blue h-12 aspect-square rounded-full hover:bg-orange hover:text-white sm:h-14"
               >
                 <label
-                  for="score-5"
+                  for="rating-5"
                   class="h-full w-full flex justify-center items-center font-bold"
                   >5</label
                 >
-                <input type="radio" name="score" id="score-5" class="hidden" />
+                <input type="radio" name="rating" id="rating-5" value="5" class="hidden" />
               </li>
             </ul>
 
             <input
               type="submit"
               value="Submit"
+              id="submit-button"
               class="bg-orange text-white uppercase font-bold tracking-widest w-full rounded-full py-3 mt-6 hover:text-orange hover:bg-white sm:mt-8"
             />
           </form>
@@ -118,11 +118,12 @@
         <!-- Rating state end -->
         <!-- Thank you state start -->
         <section
-          class="flex flex-col items-center px-4 py-8 h-full justify-between sm:py-12 sm:px-9"
+          id="thank-you-section"
+          class="hidden flex-col items-center px-4 py-8 h-full justify-between sm:py-12 sm:px-9"
         >
           <img src="images/illustration-thank-you.svg" alt="Image of a phone" />
           <p class="text-orange bg-lighter-dark-blue rounded-full py-2 px-4">
-            You selected 4 out of 5
+            You selected <span id="selected-rating">4</span> out of 5
           </p>
 
           <div>
@@ -145,5 +146,7 @@
         >Frontend Mentor</a
       >. Coded by <a href="#">Your Name Here</a>.
     </footer>
+
+    <script src="main.js"></script>
   </body>
 </html>

@@ -612,6 +612,11 @@ video {
   background-color: hsl(216 12% 8% / var(--tw-bg-opacity));
 }
 
+.bg-medium-grey {
+  --tw-bg-opacity: 1;
+  background-color: hsl(216 12% 54% / var(--tw-bg-opacity));
+}
+
 .bg-gradient-to-b {
   background-image: linear-gradient(to bottom, var(--tw-gradient-stops));
 }
