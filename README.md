@@ -32,8 +32,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Solution page on Frontend Mentor](https://www.frontendmentor.io/solutions/tailwind-css-and-vanilla-js-solution--rfF4Iyw_l)
+- Live Site URL: [GitHub Pages](https://danayatsuta.github.io/frontend-mentor-interactive-rating-component/)
 
 ## My process
 
